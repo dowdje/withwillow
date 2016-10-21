@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
+import Memorial from "./components/memorial"
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-          <h2>Welcome to Willow</h2>
+          {this.props.children}
       </div>
     );
   }
