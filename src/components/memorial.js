@@ -4,7 +4,7 @@ import React from "react";
 function Memorial() {
 
 return(
-  <div> Testing </div>
+  <div> Memorial Page </div>
 )
 
 }
