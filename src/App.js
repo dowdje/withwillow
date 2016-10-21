@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import './App.css';
 import Memorial from "./components/memorial"
 
