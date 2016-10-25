@@ -4,7 +4,7 @@ import DatePicker from 'react-bootstrap-date-picker'
 
 export default function(){
  return(
-   <div className='col-md-4'>
+   <div className='col-md-4' style={{paddingTop:'64px'}}>
      <form>
        <FormGroup>
          <FormControl
