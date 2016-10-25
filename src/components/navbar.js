@@ -28,7 +28,6 @@ export default class extends React.Component{
 
   afterOpenModal(){
     // references are now sync'd and can be accessed.
-    this.refs.subtitle.style.color = '#f00'
   }
 
   closeModal(){
@@ -45,7 +44,8 @@ export default class extends React.Component{
       </li>
       <li><a href="#" className="w3-hover-none w3-hover-text-grey w3-padding-large">Home</a></li>
       <li className="w3-hide-small"><a href="#band" className="w3-padding-large">About</a></li>
-      <li className="w3-hide-small" onClick={this.openModal}><a href="#tour" className="w3-padding-large">Join Us</a></li>
+      <li className="w3-hide-small" onClick={this.openModal}><a href="#signup" className="w3-padding-large">Join Us</a></li>
+      <li className="w3-hide-small" ><Link className='w3-padding-large' to='/form'>Write a Tribute</Link></li>
       <li className="w3-hide-small"><a href="#contact" className=" w3-padding-large"></a></li>
       <li className="w3-hide-small w3-dropdown-hover">
         <a href="javascript:void(0)" className="w3-hover-none w3-padding-large" title="More">MORE <i className="fa fa-caret-down"></i></a>
@@ -72,17 +72,17 @@ export default class extends React.Component{
       onRequestClose={this.closeModal}
       style={this.modalStyle}
       contentLabel="Example Modal"
-    >
+      >
 
       <Button bsSize='small' style={{width: '1px', float: 'right'}} className='w3-top w3-right' onClick={this.closeModal}>X </Button>
       <h2 ref="subtitle">Hello</h2>
       <div>I am a modal</div>
       <form>
-        <input />
-        <button>tab navigation</button>
-        <button>stays</button>
-        <button>inside</button>
-        <button>the modal</button>
+        <input placeholder='Full Name'/>
+        <input placeholder='E-mail'/>
+        <input placeholder='Password'/>
+        <input placeholder='Confirm Password'/>
+        <button type='submit'>Sign Up</button>
       </form>
     </Modal>
 
